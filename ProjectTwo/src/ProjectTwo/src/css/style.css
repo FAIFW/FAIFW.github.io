@@ -1,0 +1,518 @@
+body{
+	width: 100%;
+	font-family: Franklin Gothic Medium, sans-serif;
+}
+header{
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
+	background-color: #344051;
+	position:fixed;
+}
+.logo{
+	width: 25%;
+	height: 60px;
+	float: left;
+}
+.logo h3{
+	font-size: 30px;
+	transform: uppercase;
+	color: white;
+	text-align: right;
+	line-height: 60px;
+}
+.navMenu{
+	width: 75%;
+	margin-left: 25%;
+	height: 60px;
+}
+.navMenu ul{
+	width: 60%;
+	margin: 20px auto;
+	text-align: center;
+}
+.navMenu li{
+	display: inline-block;
+	width: 15%;
+	color: white;
+	font-size: 20px;
+	line-height: 30px;
+}
+.wraper{
+	padding-top: 60px;
+	width: 100%;
+	height: 1070px;
+}
+.firstPage{
+	width: 100%;
+	height: 1010px;
+	background: url('../img/background.png');
+	background-size: cover;
+	padding-top: 50px;
+}
+.firstContainer{
+	width: 80%;
+	height: 910px;
+	border: 2px solid transparent;
+	background: url('../img/boy.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	margin: auto;
+}
+.hello{
+	width: 450px;
+	height:380px;
+	margin: 350px 5%;
+	text-align: center;
+	/*border: 2px solid red;*/
+	line-height: 60px;
+}
+.hello h1{
+	margin-top: 50px;
+	font-size: 50px;
+	font-weight: bold;
+}
+.hello h4{
+	font-size: 20px;
+	font-weight: bold;
+	color: #79818d;
+}
+.hello button{
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	border: 2px solid #6d7682;
+	border-radius: 12px;
+	background: none;
+	font-size: 15px;
+	margin-top: 60px;
+	margin-right: 14px;
+	margin-left: 14px;
+	padding-left: 16;
+	padding-right: 16;
+	text-transform: uppercase;
+	transform: scale(1.0);
+}
+.secondPage{
+	width: 100%;
+	height: 600px;
+}
+.secondPage img{
+	display: block;
+	margin: 30px auto;
+}
+.whoAmI{
+	width: 100%;
+	height: 60px;
+}
+.whoAmI h2{
+	text-align: center;
+	color: #263244;
+	font-size: 33px;
+	text-transform: uppercase;
+	line-height: 30px;
+	margin-top: 60px;
+}
+.titleSecond{
+	width: 40%;
+	height: 400px;
+	margin: 0px auto;
+}
+.titleSecond p{
+	font-family: Calibri;
+	text-align: center;
+	color: #3f495a;
+	font-size: 17;
+	margin-top: 45px;
+}
+.titleSecond a{
+	display: block;
+	margin: 40px auto;
+	height: 35px;
+	width: 160px;
+	border: 2px solid #3f495a;
+	border-radius: 5px;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 10px
+}
+.thirdPage{
+	width: 100%;
+	height: 530px;
+	background: url(../img/Background3.png) no-repeat center/cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.thirdPage h2{
+	padding-top: 50px;
+	text-align: center;
+	color: #263244;
+	font-size: 33px;
+	text-transform: uppercase;
+}
+.thirdPage h3{
+	margin-top: 15px;
+	text-align: center;
+	color: #cf7600;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.thirdPage img{
+	display: block;
+	margin: 30px auto;
+}
+.thirdContainer{
+	width: 80%;
+	height: 180px;
+	margin: 50px auto;
+	padding: 20px 0px 20px 0px;
+}
+.thirdContainer img{
+	width: 15%;
+	height: 30px;
+}
+.thirdPage p{
+	display: block;
+	margin: 15px auto;
+	font-size: 16px;
+	text-align: center;
+}
+.WebDesign{
+	width: 21%;
+	float: left;
+	margin: 0% 0% 0% 2%;
+}
+.development{
+	width: 21%;
+	float: left;
+	margin: 0% 2% 0% 2%;
+}
+.CEO{
+	width: 21%;
+	float: left;
+	margin: 0% 2% 0% 2%;
+}
+.Marketing{
+	width: 21%;
+	float: left;
+	margin: 0% 2% 0% 0%;
+}
+.fourthPage{
+	width: 100%;
+	height: 1200px;
+}
+.fourthPage h2{
+	padding-top: 4%;
+	text-align: center;
+	color: #263244;
+	font-size: 33px;
+	text-transform: uppercase;
+	line-height: 60px;
+}
+.fourthPage img{
+	display: block;
+	margin: 3% auto;
+}
+.fourthPage p{
+	font-family: Calibry;
+	color: #3f495a;
+	font-size: 17px;
+	text-align: center;
+}
+.slideGalery{
+	margin: 3% auto;
+	width: 65%;
+	height: 50%;
+	border: 2px solid black;
+	background-color: lightblue;
+}
+.fourthContainer{
+	width: 65%;
+	margin: 40px auto;
+	height: 20%;
+}
+.fourthContainerLeft{
+	width: 25%;
+	height: 20%;
+	padding-left: 5px;
+	padding-right: 5px;
+	float: left;
+}
+.fourthContainerRight{
+	width: 75%;
+	height: 20%;
+	padding-left: 5px;
+	padding-right: 5px;
+	float: left;
+}
+.fourthContainerLeft h3{
+	padding-top: 10px;
+	font-size: 26px;
+	text-align: left;
+	color: #384354;
+}
+.fourthContainerLeft p{
+	padding-top: 10px;
+	color: #384354;
+	font-size: 17px;
+	text-align: left;
+}
+.fourthContainerLeft input{
+	width: 150px;
+	height: 40px;
+	margin-top: 20px;
+	border-radius: 4px;
+	background-color: #63b5ae;
+	text-align: center;
+	font-size: 20px;
+	font-style: bold;
+	color: white;
+}
+.fourthContainerRight h3{
+	font-size: 26px;
+	text-align: left;
+	color: #384354;
+	padding-left: 20px;
+}
+.fourthContainerRight p{
+	padding-top: 5px;
+	padding-left: 20px;
+	color: #384354;
+	font-size: 20px;
+	text-align: left;
+}
+.fivthPage{
+	width: 100%;
+	height: 800px;
+}
+.fivthPage h2{
+	color: #384354;
+	font-size: 33px;
+	text-align: center;
+}
+.calculator{
+	width: 47%;
+	height: 600px;
+	margin: 20px auto;
+}
+.calculator h3{
+	font-size: 29px;
+	text-transform: uppercase;
+	text-align: left;
+	color: #384354;
+	padding-top: 20px;
+}
+.calculator form{
+	margin-top: 30px;
+}
+.calculator select{
+	width: 90%;
+	height: 60px;
+	background-color: #eeeeee;
+	font-size: 20px;
+}
+.calculator option{
+	height: 60px;
+	font-size: 25px;
+}
+.calculator select:hover{
+	/*transition-timing-function: ease-in;
+	transition-duration: 0.5s;*/
+	background-color: yellow;
+}
+.equalSign{
+	width: 100%;
+	height: 2px;
+	margin-top: 50px;
+	background-color: #d1d1d1;
+}
+.calculator table{
+	width: 100%;
+	height: 80px;
+	text-align: left;
+	font-size: 21px;
+	color: #384354;
+	margin-top: 40px;
+}
+.sixthPage{
+	width: 100%;
+	height: 500px;
+	background: url(../img/background6.png) no-repeat center/cover;
+	text-align: center;
+}
+.sixthPage h2{
+	padding-top: 50px;
+	color: #263244;
+	font-size: 33px;
+	text-transform: uppercase;
+	line-height: 60px;
+	text-align: center;
+}
+.statisticBlock{
+	width: 60%;
+	height: 150px;
+	margin: 80px auto;
+}
+.happyClients{
+	background: url('../img/buttons/smail.png');
+	background-position: top;
+	background-repeat: no-repeat;
+}
+.workHours{
+	background: url('../img/buttons/workHours.png');
+	background-position: top;
+	background-repeat: no-repeat;
+}
+.totalProjects{
+	background: url('../img/buttons/totalprojects.png');
+	background-position: top;
+	background-repeat: no-repeat;
+}
+.rewards{
+	background: url('../img/buttons/cup.png');
+	background-position: top;
+	background-repeat: no-repeat;
+}
+.statisticBlock div{
+	width: 25%;
+	height: 150px;
+	float: left;
+	margin: 0 auto;
+}
+.statisticBlock h3{
+	font-size: 30px;
+	text: bold;
+	color: #323e4f;
+	margin-top: 70px;
+}
+.statisticBlock p{
+	font-size: 21px;
+	margin-bottom: 0px;
+	color: #323e4f;
+	text-transform: uppercase;
+}
+.seventhPage{
+	width: 100%;
+	height: 600px;
+}
+.seventhPage h2{
+	margin: 50px;
+	color: #263244;
+	font-size: 33px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.seventhPage img{
+	display: block;
+	margin: 30px auto;
+}
+#sevenPageMan{
+	margin-top: 100px;
+}
+#seventhText{
+	margin: 20px auto;
+	width: 35%;
+	height: 100px;
+}
+.seventhPage p{
+	font-family: calibri;
+	font-size: 16,7px;
+	text-align: center;
+	margin-top: 25px;
+	color: #3e4755;
+}
+.eightPage{
+	width: 100%;
+	height: 800px;
+	background: url('../img/Background8.png'); 
+	background-size: 100% 100%;
+}
+.eightPage h2{
+	padding-top: 100px;
+	color: white;
+	font-size: 33px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.eightPage h3{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 21px;
+	color: #d8d9dc;
+}
+.eightPage img{
+	display: block;
+	margin: 30px auto;
+}
+.eightPage p{
+	font-family: calibri;
+	font-size: 16,7px;
+	text-align: center;
+	margin-top: 10px;
+	color: #d8d9dc;
+}
+.buttonContacts{
+	width: 40%;
+	height: 100px;
+	margin: 20px auto;
+}
+.buttonContacts a{
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+.messageMe{
+	width: 40%;
+	height: 210px;
+	margin: 40px auto;
+}
+.NameInput{
+	margin: 20px 3% 0% 0%;
+	width: 47%;
+	height: 50px;
+	background-color: #d2d6dc;
+	float: left;
+}
+.InputEmail{
+	margin: 20px 0% 0% 3%;
+	width: 47%;
+	height: 50px;
+	background-color: #d2d6dc;
+}
+.messageMe textarea{
+	margin-top: 20px;
+	width: 100%;
+	height: 98px;
+	background-color: #d2d6dc;
+}
+.messageMe [type=submit]{
+	display: block;
+	margin: 30px auto;
+	width: 125px;
+	height: 35px;
+	font-size: 20,8px;
+	border: 2px;
+	border-radius: 3px;
+}
+.social{
+	width: 30%;
+	margin: 70px auto;
+}
+.social a{
+	width: 15%;
+	float: left;
+}
+footer{
+	width: 100%;
+	height: 60px;
+	background-color: #354051;
+}
+footer p{
+	text-align: center;
+	font-family: Arial;
+	color: white;
+	font-size: 13px;
+	line-height: 60px;
+}
+
