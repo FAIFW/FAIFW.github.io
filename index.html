@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Here we go again</title>
+	<link rel="stylesheet" type="text/css" href="src/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="src/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="src/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="src/css/style.css">
+	<link rel="stylesheet" type="text/css" href="src/css/media.css">
+</head>
+<body>
+	<div class="loader"></div>
+	<header>
+	<div class="PC-header">
+		<div class="logoPC">
+			<h3>Andrey Brown</h3>
+		</div>
+		<div class="MenuPC">
+			<ul>
+				<li><a href="#about">about me</a></li>
+				<li><a href="#services">services</a></li>
+				<li><a href="#cases">chemodans</a></li>
+				<li><a href="#calc">price</a></li>
+				<li><a href="#statistic">review</a></li>
+				<li><a href="#contactBlock">contact</a></li>
+			</ul>
+		</div>
+	</div>
+		<div class="mobile-header">
+			<div class="logoMobile">
+			<h3>Andrey Brown</h3>
+			</div>
+			<div class="menuMobile">
+				<ul>
+					<li><a href="#about">about me</a></li>
+					<li><a href="#services">services</a></li>
+					<li><a href="#cases">chemodans</a></li>
+					<li><a href="#calc">price</a></li>
+					<li><a href="#statistic">review</a></li>
+					<li><a href="#contactBlock">contact</a></li>
+				</ul>
+				<div class="funnyButton"></div>
+			</div>
+		</div>
+	</header>
+	<section class="wraper">
+		<section class="firstPage">
+			<div class="firstContainer">
+				<div class="hello">
+					<h1>Hello <br> I am Andrey Brown</h1>
+					<h4>Full-stuck web-developer and android-developer</h4>
+					<button class="aboutMe">About Me</button>
+					<button class="myJobs">My works</button>
+				</div>
+			</div>			
+		</section>
+	</section>
+	<section class="secondPage" id="about">
+	<!--
+		 Modal window
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+		  Launch demo modal
+		</button>
+	-->
+		<div class="modal fade" id="discountForUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Скидочка</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        Переходи на сторону зла! У нас есть печеньки
+		      </div>
+		      <div class="modal-footer">
+		        <button id="wannaCookie" type="button" class="btn btn-primary">I wanna Cookie</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="whoAmI">
+				<h2>about me</h2>
+				<img src="src/img/OrangeLine.png">
+		</div>
+		<div class="titleSecond">
+			<img class="secondPageImg" data-src="src/img/test.jpg"  src="src/img/preloadPhoto.png"  alt="">
+			<p class="element-animation">Lorem ipsum, dolor sit amet consectetur adipisiciLorem ipsum, dolor sit amet consectetur adipisicing elit. Iste distinctio iusto ipsam corrupti quidem fugiat fugit dignissimos blanditiis quis. Sequi!ng elit. Iste distinctio iusto ipsam corrupti quidem fugiat fugit dignissimos blanditiis quis. Sequi!</p>
+			<p class="element-animation">Lorem ipsum dolor sit, amet consectetur, adipisicinLorem ipsum, dolor sit amet consectetur adipisicing elit. Iste distinctio iusto ipsam corrupti quidem fugiat fugit dignissimos blanditiis quis. Sequi!g elit. Iste minus quas quos perspiciatis, vero aut voluptatibus. Dolor reiciendis aspernatur nam!</p>
+			<a href="" target="_blank">Download resume</a>
+		</div>
+	</section>
+	<section class="thirdPage" id="services">
+		<h2>what i can do</h2>
+		<img id="thirdOrangeLine" src="src/img/OrangeLine.png">
+		<div class="thirdContainer">
+			<div class="WebDesign">
+				<img src="src/img/computerIcon.png">
+				<h3>Web-design</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing  voluptates quibusdam aperiam voluptate culpa!</p>
+			</div>
+			<div class="development">
+				<img src="src/img/arrows.png">
+				<h3>Development</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing voluptates quibusdam aperiam voluptate culpa!</p>
+			</div>
+			<div class="CEO">
+				<img src="src/img/RocketIcon.png.">
+				<h3>CEO-Optimisation</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing voluptates quibusdam aperiam voluptate culpa!</p>
+			</div>
+			<div class="Marketing">
+				<img src="src/img/IconMegaphone.png">
+				<h3>Marketing</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing voluptates quibusdam aperiam voluptate culpa!</p>
+			</div>
+		</div>
+	</section>
+	<section class="fourthPage" id="cases">
+		<h2>chemodans</h2>
+		<img src="src/img/OrangeLine.png">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum.</p>
+        <div class="slideGalery">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="src/img/Carousel/one.jpg" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="src/img/Carousel/two.jpg" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="src/img/Carousel/three.jpg"  alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+        </div>
+        <div class="fourthContainer">
+        	<div class="fourthContainerLeft">
+        		<h3>CLIENT</h3>
+                <p>Company</p>
+                <h3>WEBSITE</h3>
+                <p>http://www.somesite.com</p>
+                <input type="submit" name="visit live site" value="visit live site" onclick="document.getElementById('bts2').play()">
+        	</div> 
+        	<div class="fourthContainerRight">
+        		<h3>Project Name</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores consectetur laboriosam, perspiciatis minima, blanditiis consequatur officia voluptatibus dolorem ratione nobis quisquam nostrum quam delectus rem temporibus iusto neque aliquam iste quia! Animi, aliquam. Odit impedit aperiam nemo at eveniet possimus!</p>
+        	</div>
+        </div>
+	</section>
+	<section class="fivthPage" id="calc">
+		<h2>Price calculator</h2>
+		<div class="calculator">
+			<h3>site type</h3>
+            <form>
+                <select name="" id="typeSiteSelector" form="">
+                   <option value="1000"  type="text">Landing</option>
+                   <option value="2000" type="text">Business card</option>
+                   <option value="3000" type="text">Some other type</option>
+                   <option value="4000" type="text">Because we are serious company</option>
+               </select>
+            </form>
+                <h3>design</h3>
+            <form>
+                <select name="" id="designSelector" form="">
+                    <option value="1000" type="text">This is SPARTA</option>
+                    <option value="2000" type="text">As cheaper as possible</option>
+                    <option value="3000" type="text">We have 300 dollars, is it enough?</option>
+                    <option value="4000" type="text">Better</option>
+                    <option value="5000" type="text">The Best</option>
+                </select>
+            </form>
+                <h3>adaptability</h3>
+            <form>
+            	<select id="adaptivSelector">
+                    <option value="1000" type="text">abacus</option>
+                    <option value="2000" type="text">Mobile</option>
+                    <option value="3000" type="text">PC</option>
+            	</select name="" id="" form="">
+            </form>
+            <div class="equalSign"></div>
+            <div>
+<input type="submit" name="" value="GovnoCode" onclick="calc()">
+
+
+
+
+                <table>
+                    <tr>
+                        <th>Time</th>
+                        <td>
+                        	<p>number</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Price</th>
+                        <td>
+                        	<p>number</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+		</div>
+	</section>
+	<section class="sixthPage" id="statistic">
+		<h2>statistics</h2>
+		<img src="src/img/OrangeLine.png">
+        <div class="statisticBlock">
+            <div class="happyClients">
+                <h3>120</h3>
+                <p>happy clients</p>
+            </div>
+            <div class="workHours">
+                <h3>4,600</h3>
+                <p>work hours</p>
+            </div>
+            <div class="totalProjects">
+                <h3>340</h3>
+                <p>total projects</p>
+            </div>
+            <div class="rewards">
+                <h3>23</h3>
+                <p>our rewards</p>
+            </div>
+		</div>
+	</section>
+	<section class="seventhPage">
+		<h2>review</h2>
+		<img src="src/img/OrangeLine.png">
+		<img id="sevenPageMan" data-src="src/img/test2.jpg"  src="src/img/man.png"  alt="">
+		<div id="seventhText">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Commodi corrupti impedit doloremque reiciendis in consequatur.</p>
+		<p><b>Lorem</b>, ipsum dolor.</p>
+		</div>
+	</section>
+	<section class="eightPage" id="contactBlock">
+		<h2>contacts</h2>
+		<img src="src/img/OrangeLine.png">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, vero, nihil?</p>
+		<div class="buttonContacts">
+			<a href="https://www.google.ru"><img src="src/img/buttons/location.png"><p>Saint-Petersburg, <br>Neva avenu, 11</p></a>
+			<a href="https://www.google.ru"><img src="src/img/buttons/mail.png"><p>yax.@yandex.ru</p></a>
+			<a href="https://www.google.ru"><img src="src/img/buttons/phone.png"><p>8-999-123-45-67</p></a>
+		</div>
+		<h3>send me message</h3>
+		<div class="messageMe">
+            <div class="contactForms">
+            	<input class="NameInput" type="text" name="name" placeholder="Name">
+	            <input class="InputEmail" type="email" name="login" placeholder="Email"><br>
+	            <textarea name="name1" rows="10" cols="120" placeholder="Message"></textarea>
+	            <input type="submit" value="Send" name="">
+            </div>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com/?lang=ru"><img src="src/img/buttons/facebook.png."></a>
+            <a href="https://twitter.com/?lang=ru"><img src="src/img/buttons/twitter.png"></a>
+            <a href="https://twitter.com/?lang=ru"><img src="src/img/buttons/ball.png"></a>
+            <a href="https://twitter.com/?lang=ru"><img src="src/img/buttons/kitten.png"></a>
+            <a href="https://www.instagram.com/?hl=ru"><img src="src/img/buttons/instagramm.png"></a>
+            <a href="https://www.likeni.ru/glossary/linkedin/"><img src="src/img/buttons/in.png"></a>
+        </div>
+	</section>
+	<footer>
+		<p>Copyright Andrew Brown, Berlin, Design, Web</p>
+	</footer>
+	<script type="" src="src/script/jquery-3.6.0.min.js"></script>
+	<script type="" src="src/script/script.js"></script>
+	<!--
+	<script type="text/javascript" src="src/script/calculator.js"></script>
+-->
+	<script type="" src="src/script/bootstrap.bundle.min.js"></script>
+	<script type="" src="src/script/bootstrap.min.js"></script>
+</body>
+</html>
