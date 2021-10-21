@@ -79,33 +79,20 @@ function showStartModal(){
 showStartModal();
 
 
+function calc(){
+	let typeSite = document.getElementById('#typeSiteSelector');
+	let design = document.getElementById('#designSelector');
+	let adaptiv = document.getElementById('#adaptivSelector');
+	let time = 0;
+	let price = 0;
+	price += parseInt(typeSiteSelector.options[typeSiteSelector.selectedIndex].value) + 
+	parseInt(designSelector.options[designSelector.selectedIndex].value) + 
+	parseInt(adaptivSelector.options[adaptivSelector.selectedIndex].value);
+	time += price/1000;
 
-	
 
-
-
-let value1, value2, value3;
-let term1, term2, term3;
-let time;
-let totalprice;
-
-function typeSiteCounting(){
-	let price = document.getElementById("#typeSiteSelector");
-	value1 = typeSiteSelector.value;
-	if (value1 == 'Landing'){
-		value1 = 1000; 
-		term1 = 1;
-	} else if (value1 == 'Business card'){
-		value1 = 2000;
-		term1 = 2;
-	} else if (value1 == 'Some other type'){
-		value1 = 3000;
-		term1 = 3;
-	} else if (value1 == 'Because we are serious company'){
-		value1 = 4000;
-		term1 = 4;
-	}
-	console.log(value1, term1);
+console.log(price);
+console.log(time);
 }
 
 
@@ -119,54 +106,7 @@ function typeSiteCounting(){
 
 
 
-	/*
-function designCounting(){
-	let price = document.getElementById('#designSelector');
-	value2 = designSelector.value;
-	if (value2 == 'This is SPARTA'){
-		value2 = 1000;
-		term2 = 1;
-	} else if (value2 == 'As cheaper as possible'){
-		value2 = 2000;
-		term2 = 2;
-	} else if (value2 == 'We have 300 dollars, is it enough?'){
-		value2 = 3000;
-		term2 = 3;
-	} else if (value2 == 'Better'){
-		value2 = 4000;
-		term2 = 4;
-	} else if (value2 == 'The Best'){
-		value2 = 5000;
-		term2 = 5;
-	}
-}
 
-function adaptivCounting(){
-	let price = document.getElementById('#adaptivSelector');
-	value3 = adaptivSelector.value;
-	if (value3 == 'abacus'){
-		value3 = 1000;
-		term3 = 1;
-	} else if (value3 == 'Mobile'){
-		value3 = 2000;
-		term3 = 2;
-	} else if (value3 == 'PC'){
-		value3 = 3000;
-		term3 = 3;
-	}
-}
-	
-*/
-
-
-
-
-	
-
-
-
-
-	
 
 
 
