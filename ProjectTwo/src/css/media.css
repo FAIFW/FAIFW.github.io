@@ -1,7 +1,26 @@
-@media(max-width: 1025px){
+@media(min-width: 747px){
+	.mobile-header{
+		display: none;
+	}
+	.PC-header{
+		display: block;
+	}
+}
+@media(max-width: 746px){
+	.PC-header{
+		display: none;
+	}
+	.mobile-header{
+		display: block;
+	}
+}
+@media(max-width: 1049px){
 	.wraper{
 		height: 810px;
 	}
+	.MenuPC a{
+	font-size: 20px;
+}
 	.firstPage{
 		height: 750px;
 		padding-top: 0px;
@@ -12,9 +31,6 @@
 	}
 	.hello{
 		margin-top: 175px;
-	}
-	.secondPage{
-		min-width: 769px;
 	}
 	.slideGalery{
 		width: 90%;
@@ -29,12 +45,12 @@
 		width: 85%;
 	}
 }
-
-@media(max-width: 769px){
-	.logo h3{
-		font-size: 25px;
-		line-height: 60px;
+@media(max-width: 916px){
+	.MenuPC a{
+		font-size: 15px;
 	}
+}
+@media(max-width: 769px){
 	.firstContainer{
 		max-width: 500px;
 		max-height: 500px;
@@ -49,7 +65,6 @@
 	}
 	.secondPage{
 		height: 625px;
-		min-width: 425px;
 	}
 	.titleSecond {
 		width: 90%;
@@ -79,19 +94,14 @@
 		width: 60%;
 	}
 }
-
 @media(max-width: 426px){
+	.logoMobile h3{
+		font-size: 34px;
+		line-height: 60px;
+	}
 	h2{
 		padding-top: 20px;
 		font-size: 24px;
-	}
-	.logo h3{
-		font-size: 15px;
-		line-height: 60px;
-	}
-	.navMenu li{
-		font-size: 12px;
-		line-height: 10px;
 	}
 	.firstContainer{
 		max-width: 600px;
@@ -133,6 +143,10 @@
 		font-size: 15px;
 		padding: 0;
 	}
+	.fourthContainerLeft{
+		width: 90%;
+		float: none;
+	}
 	.fourthContainerLeft input{
 		font-size: 14px;
 		margin-top: 5px;
@@ -149,7 +163,7 @@
 		margin: 10px auto;
 	}
 	.fourthContainerRight{
-		min-width: 405px;
+		max-width: 370px;
 	}
 	.fivthPage{
 		height: 450px;
@@ -201,4 +215,37 @@
 	footer p{
 		line-height: 30px;
 	}
-}	
+}
+@media(max-width: 376px){
+	.thirdPage h2{
+	padding-top: 20px;
+	}
+	.thirdPage h3{
+		margin-top: 5px;
+	}
+	.thirdPage img{
+		margin-top: 5px;
+	}
+	.thirdContainer{
+		padding-top: 5px;
+		margin-top: 5px;
+		height: 530px;
+	}
+	.thirdPage p{
+		margin: 10px;
+
+	}
+	.fourthContainerRight{
+		max-width: 370px;
+	}
+	.fourthContainerLeft input{
+		font-size: 14px;
+		margin-top: 5px;
+		position: relative;
+		top:-60px;
+		left: 180px;
+	}
+	.fourthContainerRight{
+		width: 100%;
+	}
+}

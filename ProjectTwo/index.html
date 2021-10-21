@@ -4,32 +4,49 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Here we go again</title>
+	<link rel="stylesheet" type="text/css" href="src/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="src/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="src/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="src/css/style.css">
 	<link rel="stylesheet" type="text/css" href="src/css/media.css">
-	<!-- 1 - animation
-		 2 - style	-->
 </head>
 <body>
 	<div class="loader"></div>
 	<header>
-		<div class="logo">
+	<div class="PC-header">
+		<div class="logoPC">
 			<h3>Andrey Brown</h3>
 		</div>
-		<div class="navMenu">
+		<div class="MenuPC">
 			<ul>
-				<li><a href=""></a>about me</li>
-				<li><a href=""></a>services</li>
-				<li><a href=""></a>chemodans</li>
-				<li><a href=""></a>price</li>
-				<li><a href=""></a>review</li>
-				<li><a href=""></a>contact</li>
+				<li><a href="#about">about me</a></li>
+				<li><a href="#services">services</a></li>
+				<li><a href="#cases">chemodans</a></li>
+				<li><a href="#calc">price</a></li>
+				<li><a href="#statistic">review</a></li>
+				<li><a href="#contactBlock">contact</a></li>
 			</ul>
+		</div>
+	</div>
+		<div class="mobile-header">
+			<div class="logoMobile">
+			<h3>Andrey Brown</h3>
+			</div>
+			<div class="menuMobile">
+				<ul>
+					<li><a href="#about">about me</a></li>
+					<li><a href="#services">services</a></li>
+					<li><a href="#cases">chemodans</a></li>
+					<li><a href="#calc">price</a></li>
+					<li><a href="#statistic">review</a></li>
+					<li><a href="#contactBlock">contact</a></li>
+				</ul>
+				<div class="funnyButton"></div>
+			</div>
 		</div>
 	</header>
 	<section class="wraper">
-		<div class="firstPage">
+		<section class="firstPage">
 			<div class="firstContainer">
 				<div class="hello">
 					<h1>Hello <br> I am Andrey Brown</h1>
@@ -38,21 +55,43 @@
 					<button class="myJobs">My works</button>
 				</div>
 			</div>			
-		</div>
+		</section>
 	</section>
-	<section class="secondPage">
+	<section class="secondPage" id="about">
+	<!--
+		 Modal window
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+		  Launch demo modal
+		</button>
+	-->
+		<div class="modal fade" id="discountForUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Скидочка</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        Переходи на сторону зла! У нас есть печеньки
+		      </div>
+		      <div class="modal-footer">
+		        <button id="wannaCookie" type="button" class="btn btn-primary">I wanna Cookie</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 		<div class="whoAmI">
 				<h2>about me</h2>
 				<img src="src/img/OrangeLine.png">
 		</div>
 		<div class="titleSecond">
-			<img src="src/img/IconBoy.png">
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste distinctio iusto ipsam corrupti quidem fugiat fugit dignissimos blanditiis quis. Sequi!</p>
-			<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Iste minus quas quos perspiciatis, vero aut voluptatibus. Dolor reiciendis aspernatur nam!</p>
+			<img class="secondPageImg" data-src="src/img/test.jpg"  src="src/img/preloadPhoto.png"  alt="">
+			<p class="element-animation">Lorem ipsum, dolor sit amet consectetur adipisiciLorem ipsum, dolor sit amet consectetur adipisicing elit. Iste distinctio iusto ipsam corrupti quidem fugiat fugit dignissimos blanditiis quis. Sequi!ng elit. Iste distinctio iusto ipsam corrupti quidem fugiat fugit dignissimos blanditiis quis. Sequi!</p>
+			<p class="element-animation">Lorem ipsum dolor sit, amet consectetur, adipisicinLorem ipsum, dolor sit amet consectetur adipisicing elit. Iste distinctio iusto ipsam corrupti quidem fugiat fugit dignissimos blanditiis quis. Sequi!g elit. Iste minus quas quos perspiciatis, vero aut voluptatibus. Dolor reiciendis aspernatur nam!</p>
 			<a href="" target="_blank">Download resume</a>
 		</div>
 	</section>
-	<section class="thirdPage">
+	<section class="thirdPage" id="services">
 		<h2>what i can do</h2>
 		<img id="thirdOrangeLine" src="src/img/OrangeLine.png">
 		<div class="thirdContainer">
@@ -78,11 +117,38 @@
 			</div>
 		</div>
 	</section>
-	<section class="fourthPage">
+	<section class="fourthPage" id="cases">
 		<h2>chemodans</h2>
 		<img src="src/img/OrangeLine.png">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum.</p>
-        <div class="slideGalery"></div>
+        <div class="slideGalery">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="src/img/Carousel/one.jpg" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="src/img/Carousel/two.jpg" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="src/img/Carousel/three.jpg"  alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+        </div>
         <div class="fourthContainer">
         	<div class="fourthContainerLeft">
         		<h3>CLIENT</h3>
@@ -97,52 +163,64 @@
         	</div>
         </div>
 	</section>
-	<section class="fivthPage">
+	<section class="fivthPage" id="calc">
 		<h2>Price calculator</h2>
 		<div class="calculator">
 			<h3>site type</h3>
             <form>
-                <select name="" id="" form="">
-                   <option value="option1">Landing</option>
-                   <option value="option2">Business Card</option>
-                   <option value="option3">Some Other type</option>
-                   <option value="option4">Because we are serious company. That is why we need site</option>
+                <select name="" id="typeSiteSelector" form="">
+                   <option type="text">Landing</option>
+                   <option type="text">Business card</option>
+                   <option type="text">Some other type</option>
+                   <option type="text">Because we are serious company</option>
                </select>
+               <br>
+               
+<input type="submit" name="" value="GovnoCode" onclick="typeSiteCounting()">
             </form>
                 <h3>design</h3>
             <form>
-                <select name="" id="" form="">
-                    <option value="option5">This is SPARTA</option>
-                    <option value="option6">As cheaper as possible</option>
-                    <option value="option7">We have 300 dollars, is it enough?</option>
-                    <option value="option8">Better</option>
-                    <option value="option9">The Best</option>
+                <select name="" id="designSelector" form="">
+                    <option type="text">This is SPARTA</option>
+                    <option type="text">As cheaper as possible</option>
+                    <option type="text">We have 300 dollars, is it enough?</option>
+                    <option type="text">Better</option>
+                    <option type="text">The Best</option>
                 </select>
             </form>
                 <h3>adaptability</h3>
             <form>
-            	<select>
-                    <option value="option10">abacus</option>
-                    <option value="option11">Mobile</option>
-                    <option value="option12">PC</option>
+            	<select id="adaptivSelector">
+                    <option type="text">abacus</option>
+                    <option type="text">Mobile</option>
+                    <option type="text">PC</option>
             	</select name="" id="" form="">
             </form>
             <div class="equalSign"></div>
             <div>
+
+
+
+
+
                 <table>
                     <tr>
                         <th>Time</th>
-                        <td>0</td>
+                        <td>
+                        	<p>number</p>
+                        </td>
                     </tr>
                     <tr>
                         <th>Price</th>
-                        <td>0</td>
+                        <td>
+                        	<p>number</p>
+                        </td>
                     </tr>
                 </table>
             </div>
 		</div>
 	</section>
-	<section class="sixthPage">
+	<section class="sixthPage" id="statistic">
 		<h2>statistics</h2>
 		<img src="src/img/OrangeLine.png">
         <div class="statisticBlock">
@@ -167,14 +245,13 @@
 	<section class="seventhPage">
 		<h2>review</h2>
 		<img src="src/img/OrangeLine.png">
-		<img id="sevenPageMan" src="src/img/man.png">
+		<img id="sevenPageMan" data-src="src/img/test2.jpg"  src="src/img/man.png"  alt="">
 		<div id="seventhText">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Commodi corrupti impedit doloremque reiciendis in consequatur.</p>
 		<p><b>Lorem</b>, ipsum dolor.</p>
 		</div>
 	</section>
-
-	<section class="eightPage">
+	<section class="eightPage" id="contactBlock">
 		<h2>contacts</h2>
 		<img src="src/img/OrangeLine.png">
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, vero, nihil?</p>
@@ -204,5 +281,12 @@
 	<footer>
 		<p>Copyright Andrew Brown, Berlin, Design, Web</p>
 	</footer>
+	<script type="" src="src/script/jquery-3.6.0.min.js"></script>
+	<script type="" src="src/script/script.js"></script>
+	<!--
+	<script type="text/javascript" src="src/script/calculator.js"></script>
+-->
+	<script type="" src="src/script/bootstrap.bundle.min.js"></script>
+	<script type="" src="src/script/bootstrap.min.js"></script>
 </body>
 </html>
