@@ -88,11 +88,10 @@ function calc(){
 	parseInt(designSelector.options[designSelector.selectedIndex].value) + 
 	parseInt(adaptivSelector.options[adaptivSelector.selectedIndex].value);
 	let time = 0;
-	time = parseInt(typeSiteSelector.options[typeSiteSelector.selectedIndex].time);
-	/* +
-	parseInt(designSelector.options[designSelector.selectedIndex].time) +
-	parseInt(adaptivSelector.options[adaptivSelector.selectedIndex]);
-*/
+	time += parseInt(typeSiteSelector.options[typeSiteSelector.selectedIndex].day) + 
+		parseInt(designSelector.options[designSelector.selectedIndex].day) + 
+		parseInt(adaptivSelector.options[adaptivSelector.selectedIndex].day);
+
 	
 
 
