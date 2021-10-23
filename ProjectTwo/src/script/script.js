@@ -83,12 +83,17 @@ function calc(){
 	let typeSite = document.getElementById('#typeSiteSelector');
 	let design = document.getElementById('#designSelector');
 	let adaptiv = document.getElementById('#adaptivSelector');
-	let time = 0;
 	let price = 0;
 	price += parseInt(typeSiteSelector.options[typeSiteSelector.selectedIndex].value) + 
 	parseInt(designSelector.options[designSelector.selectedIndex].value) + 
 	parseInt(adaptivSelector.options[adaptivSelector.selectedIndex].value);
-	time += price/1000;
+	let time = 0;
+	time = parseInt(typeSiteSelector.options[typeSiteSelector.selectedIndex].time);
+	/* +
+	parseInt(designSelector.options[designSelector.selectedIndex].time) +
+	parseInt(adaptivSelector.options[adaptivSelector.selectedIndex]);
+*/
+	
 
 
 console.log(price);
