@@ -79,24 +79,99 @@ function showStartModal(){
 showStartModal();
 
 
+
+// calculator
+
+
 function calc(){
 	let typeSite = document.getElementById('#typeSiteSelector');
 	let design = document.getElementById('#designSelector');
 	let adaptiv = document.getElementById('#adaptivSelector');
+
 	let price = 0;
 	price += parseInt(typeSiteSelector.options[typeSiteSelector.selectedIndex].value) + 
 	parseInt(designSelector.options[designSelector.selectedIndex].value) + 
 	parseInt(adaptivSelector.options[adaptivSelector.selectedIndex].value);
+	document.getElementById("priceResult").innerHTML = price;
+	
 	let time = 0;
-	time += parseInt(typeSiteSelector.options[typeSiteSelector.selectedIndex].dataset) + 
-		parseInt(designSelector.options[designSelector.selectedIndex].dataset) + 
-		parseInt(adaptivSelector.options[adaptivSelector.selectedIndex].dataset);
-
-
-
-console.log(price);
-console.log(time);
+	time += parseInt(typeSiteSelector.options[typeSiteSelector.selectedIndex].getAttribute('time')) + 
+	parseInt(designSelector.options[designSelector.selectedIndex].getAttribute('time')) + 
+	parseInt(adaptivSelector.options[adaptivSelector.selectedIndex].getAttribute('time'));
+	document.getElementById("timeResult").innerHTML = time;
 }
+calc();
+
+
+
+
+/*
+	let time1 = typeSiteSelector.options[typeSiteSelector.selectedIndex].text;
+	if (typeSiteSelector.options[typeSiteSelector.selectedIndex].text == 'Landing'){
+		time +=1
+		}else if (typeSiteSelector.options[typeSiteSelector.selectedIndex].text == 'Business card'){
+			time +=2
+		}else if (typeSiteSelector.options[typeSiteSelector.selectedIndex].text == 'Some other type'){
+			time +=3
+		}else if (typeSiteSelector.options[typeSiteSelector.selectedIndex].text == 'Because we are serious company'){
+			time +=4
+		}
+	let time2 = designSelector.options[designSelector.selectedIndex].text;
+	if (designSelector.options[designSelector.selectedIndex].text == 'This is SPARTA'){
+		time +=1
+		}else if (designSelector.options[designSelector.selectedIndex].text == 'As cheaper as possible'){
+			time +=2
+		}else if (designSelector.options[designSelector.selectedIndex].text == 'We have 300 dollars, is it enough?'){
+			time +=3
+		}else if (designSelector.options[designSelector.selectedIndex].text == 'We have 300 dollars, is it enough?'){
+			time +=4
+		}else if (designSelector.options[designSelector.selectedIndex].text == 'Better'){
+			time +=4
+		}else if (designSelector.options[designSelector.selectedIndex].text == 'The Best'){
+			time +=5
+		}
+
+	let time3 = adaptivSelector.options[adaptivSelector.selectedIndex].text;
+	if (adaptivSelector.options[adaptivSelector.selectedIndex].text == 'abacus'){
+		time +=1
+		}else if (adaptivSelector.options[adaptivSelector.selectedIndex].text == 'Mobile'){
+			time +=2
+		}else if (adaptivSelector.options[adaptivSelector.selectedIndex].text == 'PC'){
+			time +3
+		}
+
+time.innerHTML = time;
+
+
+
+	
+
+
+
+
+
+	let time = $("typeSiteSelector").attr("value");
+
+
+	
+
+
+
+	
+*/
+
+
+
+
+		
+			
+
+
+	
+
+
+
+
 
 
 
